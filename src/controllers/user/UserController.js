@@ -3,7 +3,7 @@ const {
   badRequestError
 } = require("../../global_functions");
 
-const User = require("../../models/user");
+const User = require('../../db/models/user');
 
 // Add user Controller
 // req : HTTP Request Object

@@ -23,7 +23,7 @@ const app = express()
 app.use(express.static(path.join(__dirname, "public")));
 
 //Database connection
-const db = require("./src/config/database");
+const db = require("./src/db/config/database");
 db.authenticate()
   .then(() => console.log("Database Connected"))
   .catch((err) => console.log("Error: " + err));
