@@ -5,15 +5,18 @@ Building a CRUD API using node.js, express,postgres and sequelize
 Getting Started
 
 Before procceding further we must have following things installed and setup
-  Install Nodejs >= 12.x - Nodejs
-  Install Postgres >= 10.13 - Postgres
-  Install Git - Git
+
+  1. Install Nodejs >= 12.x - Nodejs
+  2. Install Postgres >= 10.13 - Postgres
+  3. Install Git - Git
 
 Prerequisites
+
 These uses following technologies or frameworks.
-  -Nodejs/Express
-  -Postgresql
-  -Sequelize
+
+  1. Nodejs/Express
+  2. Postgresql
+  3. Sequelize
 
 Installation
 
