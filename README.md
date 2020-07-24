@@ -21,23 +21,29 @@ These uses following technologies or frameworks.
 Installation
 
 1. Clone the repo
-  https://github.com/Mayuri-Birle/CRUD_API_Sequelize.git
 
-2. Change the directory, get into objection-boilerplate dir
-  cd CRUD_API_Sequelize
+    https://github.com/Mayuri-Birle/CRUD_API_Sequelize.git
+
+2. Change the directory, get into CRUD_API_Sequelize dir
+
+    cd CRUD_API_Sequelize
 
 3. Change the directory, and get into db directory in root directory
-  cd src
-  cd db
+
+    cd src
+    cd db
 
 4. Now create a database by running 
-  npx sequelize db:create
+
+    npx sequelize db:create
 
 5. Now create a table by running the command
-  npx sequelize db:migrate
+
+    npx sequelize db:migrate
 
 6. Now you can start development server
-  npm run dev
+
+    npm run dev
 
 
 
