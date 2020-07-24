@@ -31,6 +31,7 @@ Installation
 3. Change the directory, and get into db directory in root directory
 
     cd src
+    
     cd db
 
 4. Now create a database by running 
