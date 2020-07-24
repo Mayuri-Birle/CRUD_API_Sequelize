@@ -1,1 +1,41 @@
-# CRUD_API_Sequelize
+CRUD API  using Sequelize 
+
+Building a CRUD API using node.js, express,postgres and sequelize
+
+Getting Started
+
+Before procceding further we must have following things installed and setup
+  Install Nodejs >= 12.x - Nodejs
+  Install Postgres >= 10.13 - Postgres
+  Install Git - Git
+
+Prerequisites
+These uses following technologies or frameworks.
+  -Nodejs/Express
+  -Postgresql
+  -Sequelize
+
+Installation
+
+1. Clone the repo
+  https://github.com/Mayuri-Birle/CRUD_API_Sequelize.git
+
+2. Change the directory, get into objection-boilerplate dir
+  cd CRUD_API_Sequelize
+
+3. Change the directory, and get into db directory in root directory
+  cd src
+  cd db
+
+4. Now create a database by running 
+  npx sequelize db:create
+
+5. Now create a table by running the command
+  npx sequelize db:migrate
+
+6. Now you can start development server
+  npm run dev
+
+
+
+
