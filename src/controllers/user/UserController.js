@@ -3,7 +3,8 @@ const {
   badRequestError
 } = require("../../global_functions");
 
-const User = require('../../db/models/user');
+const User = require('../../db/models/users');
+const Post = require('../../db/models/posts');
 
 // Add user Controller
 // req : HTTP Request Object
@@ -15,8 +16,9 @@ const AddUser = async (req, res) => {
   if (!data.email) return badRequestError(res, "Enter email");
 
   //Insert into table
-  let user_added = await User.create(data);
 
+  let user_added = await User.create(data);
+  console.log(user_added.toJSON());
   if (!user_added) return badRequestError(res, "User not added");
 
   return okResponse(res, user_added, "User Added");
@@ -30,7 +32,12 @@ const GetUser = async (req, res) => {
 
   if (!data.id) return badRequestError(res, "Enter id");
 
-  let user = await User.findByPk(data.id);
+  let user = await User.findOne({
+    where: {
+      id: data
+    },
+    include: 'posts'
+  });
   if (user === undefined) return badRequestError(res, "No user found");
 
   return okResponse(res, user, "User Details")
